@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CaicedoRamos_EjemploAPI.Views.ClimaActual"
+             Title="ClimaActual"
+             Background="#5e2129">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label Text="Latitud" Grid.Row="0" Grid.Column="0"/>
+        <Label Text="Longitud" Grid.Row="0" Grid.Column="1"/>
+
+        <Entry x:Name="Lat" Grid.Row="1" Grid.Column="0"/>
+        <Entry x:Name="Lon" Grid.Row="1" Grid.Column="1"/>
+
+        <Button Text="Constular" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Clicked="Button_Clicked"/>
+        <Label Text="Estado del clima:" Grid.Row="4" Grid.Column="0"/>
+        <Label x:Name="weatherLabel" Grid.Row="4" Grid.Column="1"/>
+        <Label Text="Ciudad:" Grid.Row="5" Grid.Column="0"/>
+        <Label x:Name="cityLabel" Grid.Row="5" Grid.Column="1"/>
+    </Grid>
+</ContentPage>
